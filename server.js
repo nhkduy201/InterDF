@@ -7,6 +7,10 @@ app.use(bodyParser.json())
 
 require('dotenv').config()
 
+app.get('/', (req, res) => {
+    res.send('Hello InterDM!')
+})
+
 app.get('/webhook', (req, res) => {
 
     // Your verify token. Should be a random string.
